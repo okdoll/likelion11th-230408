@@ -1,0 +1,46 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    
+}
+
+.navbar {
+    background-color: #F5F5F7;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: center;
+  }
+  
+  .navbar-item {
+    margin-right: 32px;
+    font-size: 13px;
+    font-weight: 400;
+    display:inline-block;
+  }
+  
+  .navbar-item:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
+  
