@@ -80,5 +80,164 @@ body {
 }
 
 .search-result-seoul-content {
-    
+
+}
+
+.come-see {
+    width: 100%;
+    height: 1090px;
+    background-color: rgb(89, 89, 164);
+    text-align: center;
+}
+
+.come-see-blank {
+    width: 100%;
+    height: 43px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.come-see-title {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgb(207, 152, 152);
+}
+
+.come-see-blank-2 {
+    width: 100%;
+    height: 10px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.come-see-advice {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(99, 145, 130);
+}
+
+.come-see-blank-3 {
+    width: 100%;
+    height: 43px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.get-started {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(240, 212, 152);
+    text-align: center;
+}
+
+.get-started-blank {
+    width: 100%;
+    height: 40px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+
+.get-started-title {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgb(207, 152, 152);
+}
+
+.get-started-blank-2 {
+    width: 100%;
+    height: 10px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.get-started-advice {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(99, 145, 130);
+}
+
+.get-started-blank-3 {
+    width: 100%;
+    height: 43px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.now-apple {
+    width: 100%;
+    height: 730px;
+    background-color: rgb(224, 155, 43);
+    text-align: center;
+}
+
+.now-apple-blank {
+    width: 100%;
+    height: 40px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.now-apple-title {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgb(207, 152, 152);
+}
+
+.now-apple-blank-2 {
+    width: 100%;
+    height: 43px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.section-to-footer-blank {
+    width: 100%;
+    height: 82px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.ps {
+    width: 100%;
+    height: 800px;
+    background-color: bisque;
+}
+
+.ps-portal {
+
+    width: 2000px;
+    height: 280px;
+    background-color:beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #6E6E73;
+    font-size: 11px;
 }
