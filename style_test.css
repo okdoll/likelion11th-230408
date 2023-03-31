@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 44px;
+    background-color: bisque;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-menu-item {
+    display: table-cell;
+    vertical-align: middle;
+    float: center;
+    line-height: 50px;
+}
+
+.nav-search {
+    width: 100%;
+    height: 54px;
+    background-color: aqua;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon-content {
+    width: 100%;
+    height: 76px;
+    background-color:beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-result {
+    width: 100%;
+    height: 465px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.search-result-blank {
+    width: 100%;
+    height: 36px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.search-result-seoul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 140, 140);
+    height: 44px;
+    font-size: xx-large;
+
+}
+
+.search-result-blank-2 {
+    width: 100%;
+    height: 34px;
+    background-color: blueviolet;
+    margin: 0;
+}
+
+.search-result-seoul-content {
+    
+}

@@ -24,71 +24,43 @@
 
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-menu" >
+                <li class="navbar-item"><a onClick="window.location.reload()" style="cursor: pointer;" id = "nav-apple">
+                    <img src="./apple logo.png" border="0" width = "15" alt="Apple"></a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/store">스토어</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/mac/">Mac</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/ipad/">iPad</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/iphone/">iPhone</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/watch/">Watch</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/airpods/">AirPods</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/tv-home/">TV 및 홈</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/services/">엔터테인먼트</a></li>
+                <li class="navbar-item"><a href="https://www.apple.com/kr/shop/accessories/all">액세서리</a></li>
+                <li class="navbar-item"><a href="https://support.apple.com/ko-kr">고객지원</a></li>
+                <li class="navbar-item"><a href="#">
+                    <img src="./search icon.svg" border="0" width = "16" alt="Search"></a></li>
+                <li class="navbar-item"><a href="#">
+                    <img src="./shop icon.png" border="0" width = "15" alt="장바구니"></a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <ul class="navbar-menu" >
-                    <li class="navbar-item"><a onClick="window.location.reload()" style="cursor: pointer;" id = "nav-apple">
-                        <img src="./apple logo.png" border="0" width = "15" alt="Apple"></a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/store">스토어</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/mac/">Mac</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/ipad/">iPad</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/iphone/">iPhone</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/watch/">Watch</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/airpods/">AirPods</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/tv-home/">TV 및 홈</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/services/">엔터테인먼트</a></li>
-                    <li class="navbar-item"><a href="https://www.apple.com/kr/shop/accessories/all">액세서리</a></li>
-                    <li class="navbar-item"><a href="https://support.apple.com/ko-kr">고객지원</a></li>
-                    <li class="navbar-item"><a href="#">
-                        <img src="./search icon.png" border="0" width = "16" alt="Search"></a></li>
-                    <li class="navbar-item"><a href="#">
-                        <img src="./shop icon.png" border="0" width = "15" alt="장바구니"></a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section>
         <div class="store-search">
-            <div class="container">
-                <div class="store-search-bar_content">
-                    <div class="store-search-section-heading">
-                        <a>매장 찾기</a>
-                    </div>
-                    <div class="store-search-section-input"></div>
-                    <div class="store-search-input">
+            <div class="store-search-container">
+                <ul class="store-search-bar_content">
+                    <a class="store-search-bar_name"role="button" tabindex="0" hreflang="ko-KR" href="/kr/retail/"><b>매장 찾기</b></a>
+                    <li class="store-search_search">
                         <span class="search-icon"></span>
                         <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색">
-                    </div>
-                </div>
-                <div class="store-search-section-storelist">
-                    <a>전체 매장 목록 ></a>
-                </div>
+                    </li>
+                    <li class="store-search-list"><a>전체 매장 목록 ></a></li>
+                </ul>
             </div>
-            </div>
-        </div>
-    </section>
+        </div> 
+    </header>
 
-        <!-- <section class="store-search" role="search" aria-label="매장 찾기">
-            <div class="store-search-wrapper">
-                <div class="store-search-bar">
-                    <div class="store-search-bar_content">
-                        <div class="store-search-section-heading">
-                            <a>매장 찾기</a>
-                        </div>
-                        <div class="store-search-section-input">
-                            <div class="store-search-input">
-                                <span class="search-icon"></span>
-                                <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색">
-                            </div>
-                        </div>
-                        <div class="store-search-section-storelist">
-                            <a>전체 매장 목록 ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    </main>
 </body>
 </html>
