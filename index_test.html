@@ -13,11 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 
+    <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
     <!-- 링크 버튼 색상 변경 방지 -->
     <style type="text/css">
         a:link { color: black; text-decoration: none;}	
         a:visited { color: black; text-decoration: none;}	
         a:hover { color: black; text-decoration: underline;}
+        /* * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; } */
     </style>
 
 </head>
@@ -49,21 +51,27 @@
 
         <nav class="nav-search">
             <div class="nav-search-bar">
-                <div class="nav-search-bar_content">
-                    <div class="nav-search-bar-heading">
-                        <a role="button" hreflang="ko-KR" href="https://www.apple.com/kr/retail/">매장 찾기</a>
-                    </div>
-                    <div class="nav-search-bar-input-section">
-                        <div class="nav-search-input">
-                            <img src="./search icon.svg" border="0" width = "16" alt="Search"></a></li>
-                            <input type="text" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autocorrect="off" autocomplete="off" autocapitalize="off">
+                <ul class="nav-search-bar_content">
+                    <li class="nav-search-bar-li">
+                        <div class="nav-search-bar-heading">
+                            <a role="button" hreflang="ko-KR" href="https://www.apple.com/kr/retail/"><b>매장 찾기</b></a>
                         </div>
-                    </div>
-                    <div class="nav-search-bar-storelist">
-                        <a class="complete-store-list" hreflang="ko-KR" href="https://www.apple.com/kr/retail/storelist/">전체 매장 목록   >
-                        </a>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-search-bar-li">
+                        <div class="nav-search-bar-input-section">
+                            <div class="nav-search-input">
+                                <img class="search-input-icon" src="./search icon.svg" border="0" width = "16" alt="Search"></a>
+                                <input type="text" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autocorrect="off" autocomplete="off" autocapitalize="off">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-search-bar-li">
+                        <div class="nav-search-bar-storelist">
+                            <a class="complete-store-list" hreflang="ko-KR" href="https://www.apple.com/kr/retail/storelist/"><span style="color:blue">전체 매장 목록   ></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav> 
     </header>
