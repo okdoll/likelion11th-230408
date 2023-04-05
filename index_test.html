@@ -62,13 +62,16 @@
                         <div class="nav-search-bar-input-section">
                             <div class="nav-search-input">
                                 <img class="search-input-icon" src="./search icon.svg" border="0" width = "16" alt="Search"></a>
-                                <input type="text" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autocorrect="off" autocomplete="off" autocapitalize="off">
+                                <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autoCorrect="off" 
+                                autoCapitalize="off" autoComplete="off" spellcheck="false" role="combobox" aria-label="매장 찾기" 
+                                aria-expanded="false" aria-owns="form-autocomplete-listbox"/>
                             </div>
                         </div>
                     </li>
                     <li class="nav-search-bar-li">
                         <div class="nav-search-bar-storelist">
-                            <a class="complete-store-list" hreflang="ko-KR" href="https://www.apple.com/kr/retail/storelist/"><span style="color:blue">전체 매장 목록   ></span>
+                            <a class="complete-store-list" hreflang="ko-KR" href="https://www.apple.com/kr/retail/storelist/">
+                                <span style="color:blue">전체 매장 목록   ></span>
                             </a>
                         </div>
                     </li>
@@ -80,12 +83,128 @@
 
     <!-- 서울시 근처 매장 -->
     <section>
-        <div class="ribbon-content">iPhone 7 Plus 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시<br>사용할 수 있는 ₩40,000-₩780,000 상당의 크레딧이.* <span style="color:blue">iPhone 쇼핑하기 > </span></div>
+        <div class="ribbon-content">
+            <!-- iPhone 7 Plus 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시<br>사용할 수 있는 ₩40,000-₩780,000 상당의 크레딧이.* 
+            <span style="color:blue">iPhone 쇼핑하기 > </span> -->
+            <p>
+                <span>iPhone 7 Plus 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시 사용할 수 있는 ₩40,000-₩780,000 <br>상당의 크레딧이.*</span> 
+                <a href="https://www.apple.com/kr/shop/goto/buy_iphone" aria-label="iPhone 7 Plus 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시 사용할 수 있는 ₩40,000-₩780,000 상당의 크레딧이.* iPhone 쇼핑하기" class="ribbon-link icon-wrapper" data-analytics-title="shop now">
+                    <span class="icon-copy" style="color:blue">iPhone 쇼핑하기 ></span>
+                    <span class="icon icon-after icon-chevronright"></span>
+                </a>
+            </p>
+        </div>
         <div class="search-result"> 
             <h2 class="search-result-blank"> </h2>
             <a class="search-result-seoul"><b>서울특별시 근처 매장</b></a>
             <h2 class="search-result-blank-2"> </h2>
-            <div class="search-result-seoul-content"></div>
+            <div class="search-result-seoul-content">
+                <div class="stores-around-results" data-analytics-section-engagement="name:nearby stores">
+                    <div id="stores-gallery" aria-label="stores gallery" class="multi-slide-gallery" role="group">
+                        <div class="content">
+                            <div class="item-container" style="transform: translate3d(0px, 0px, 0px);">
+                                <div id="storecard-item-1" data-index="0" class="gallery-item storecard current" data-ac-gallery-item="true" style="opacity: 1; transform: translate(0px, 0px);">
+                                    <div class="store-card-wrapper visible" style="transition-delay: 0.09s; height: 331px; display: flex;">
+                                        <a class="store-card" data-analytics-click="prop3: R738" data-analytics-gallery-item-id="R738" data-store-number="R738" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/myeongdong/" tabindex="0">
+                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                                <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
+                                            </div>
+                                            <div class="card-content">
+                                                <h3 class="store-name">Apple 명동</h3>
+                                                <div class="store-address-block store-address">
+                                                    <address>서울 중구 남대문로 2가 9-1<br>하이드파크</address>
+                                                </div>
+                                                <div class="search-result-status store-details">
+                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="store-card-wrapper visible" style="transition-delay: 0.18s; height: 331px; display: flex;">
+                                        <a class="store-card" data-analytics-click="prop3: R692" data-analytics-gallery-item-id="R692" data-store-number="R692" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/garosugil/" tabindex="0">
+                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                                <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R692.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
+                                            </div>
+                                            <div class="card-content">
+                                                <h3 class="store-name">Apple 가로수길</h3>
+                                                <div class="store-address-block store-address">
+                                                    <address>서울 강남구<br>가로수길 43</address>
+                                                </div>
+                                                <div class="search-result-status store-details">
+                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="store-card-wrapper visible" style="transition-delay: 0.27s; height: 331px; display: flex;">
+                                        <a class="store-card" data-analytics-click="prop3: R691" data-analytics-gallery-item-id="R691" data-store-number="R691" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/gangnam/" tabindex="0">
+                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                                <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/5c9/186/ab1/e1d/2ce/f8c/188/19e/095/82d/bfc0e599-00b9-3140-94ac-db275dde560b_og_large_2x.png" alt="" class="store-card-image">
+                                            </div>
+                                            <div class="card-content">
+                                                <h3 class="store-name">Apple 강남</h3>
+                                                <div class="store-address-block store-address">
+                                                    <address>서울 강남구<br>강남대로 464</address>
+                                                </div>
+                                                <div class="search-result-status store-details">
+                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="storecard-item-2" data-index="1" class="gallery-item storecard" data-ac-gallery-item="true" style="opacity: 1; transform: translate(680px, 0px);" data-original-aria-hidden="" aria-hidden="true">
+                                    <div class="store-card-wrapper visible" style="height: 331px; display: flex;">
+                                        <a class="store-card" data-analytics-click="prop3: R747" data-analytics-gallery-item-id="R747" data-store-number="R747" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/yeouido/" tabindex="-1">
+                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                                <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/508/95b/5ee/dbb/dc7/a26/5d8/f08/f35/757/608992af-2279-3265-aa6a-b34941223458_Yeouido_20210226_TF_RetailStorePage_card_large_2x.jpg" alt="" class="store-card-image">
+                                            </div>
+                                            <div class="card-content">
+                                                <h3 class="store-name">Apple 여의도</h3>
+                                                <div class="store-address-block store-address">
+                                                    <address>서울 영등포구 국제금융로 10<br>IFC MALL, L1</address>
+                                                </div>
+                                                <div class="search-result-status store-details">
+                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="store-card-wrapper visible" style="height: 331px; display: flex;">
+                                        <a class="store-card" data-analytics-click="prop3: R751" data-analytics-gallery-item-id="R751" data-store-number="R751" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/jamsil/" tabindex="-1">
+                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                                <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/265/9d3/659/93d/31c/96f/a1e/e17/b8a/ea2/57402eef-cc9d-3954-af59-f92535151c23_Apple_Jamsil_card_large_2x.png" alt="" class="store-card-image">
+                                            </div>
+                                            <div class="card-content">
+                                                <h3 class="store-name">Apple 잠실</h3>
+                                                <div class="store-address-block store-address">
+                                                    <address>서울 송파구 올림픽로 300<br>롯데월드몰 1F</address>
+                                                </div>
+                                                <div class="search-result-status store-details">
+                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="storecard-item-3" data-index="2" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
+                                <div id="storecard-item-4" data-index="3" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
+                                <div id="storecard-item-5" data-index="4" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="paddlenav paddlenav-framed paddlenav-compact" data-analytics-gallery-interaction-type="paddlenav">
+                            <ul>
+                                <li class="paddle-arrow visible" id="storecard-left-arrow" style="transition-delay: 0.36s;">
+                                    <button type="button" aria-label="이전" class="paddlenav-arrow paddlenav-arrow-previous" id="storecard-paddlenav-left-arrow" tabindex="-1" disabled="true" aria-hidden="true"></button>
+                                </li>
+                                <li class="paddle-arrow visible" id="storecard-right-arrow" style="transition-delay: 0.36s;">
+                                    <button type="button" aria-label="다음" class="paddlenav-arrow paddlenav-arrow-next" id="storecard-paddlenav-right-arrow" tabindex="0"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
