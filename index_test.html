@@ -12,7 +12,7 @@
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
     <!-- 링크 버튼 색상 변경 방지 -->
@@ -50,35 +50,6 @@
             </div>
         </nav>
 
-        <!-- <nav class="nav-search">
-            <div class="nav-search-bar">
-                <ul class="nav-search-bar_content">
-                    <li class="nav-search-bar-li">
-                        <div class="nav-search-bar-heading">
-                            <a role="button" hreflang="ko-KR" href="https://www.apple.com/kr/retail/"><b>매장 찾기</b></a>
-                        </div>
-                    </li>
-                    <li class="nav-search-bar-li">
-                        <div class="nav-search-bar-input-section">
-                            <div class="nav-search-input">
-                                <span class="search-icon"></span>
-                                <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autoCorrect="off" 
-                                autoCapitalize="off" autoComplete="off" spellcheck="false" role="combobox" aria-label="매장 찾기" 
-                                aria-expanded="false" aria-owns="form-autocomplete-listbox"/>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-search-bar-li">
-                        <div class="nav-search-bar-storelist">
-                            <a class="complete-store-list" hreflang="ko-KR" href="https://www.apple.com/kr/retail/storelist/">
-                                <span style="color:blue">전체 매장 목록   ></span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>  -->
-
         <div class="store-search-wrapper" data-analytics-activitymap-region-id="find a store">
             <div class="store-search-bar ">
                 <div class="store-search-bar__content">
@@ -100,7 +71,6 @@
     </header>
 
 
-    <!-- 서울시 근처 매장 -->
     <section>
         <div class="ribbon-content">
             <p>
@@ -111,19 +81,35 @@
                 </a>
             </p>
         </div>
+
+        
+    <!-- 서울시 근처 매장 -->
         <div class="search-result"> 
             <h2 class="search-result-blank"> </h2>
             <a class="search-result-seoul"><b>서울특별시 근처 매장</b></a>
             <h2 class="search-result-blank-2"> </h2>
             <div class="search-result-seoul-content">
-                <div class="stores-around-results" data-analytics-section-engagement="name:nearby stores">
+                <div class="search-result-myeongdong">
+                    <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&output-format=jpg&output-quality=85&interpolation=progressive-bicubic" alt="" class="store-card-image" width=300px>
+                    <div class="myeongdong-content">
+                        <h3 class="store-name"><b>Apple 명동</b></h3>
+                        <!-- <address class="myeongdong-address">서울 중구 남대문로 2가 9-1<br>하이드파크<br><br>폐점 시간 10:00 오후</address> -->
+                        <a class="store-address">서울 중구 남대문로 2가 9-1<br>하이드파크<br><br>폐점 시간 10:00 오후</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- <div class="stores-around-results" data-analytics-section-engagement="name:nearby stores">
                     <div id="stores-gallery" aria-label="stores gallery" class="multi-slide-gallery" role="group">
                         <div class="content">
                             <div class="item-container" style="transform: translate3d(0px, 0px, 0px);">
                                 <div class="store-card-wrapper visible" style="transition-delay: 0.09s; height: 331px; display: flex;">
                                     <a class="store-card" data-analytics-click="prop3: R738" data-analytics-gallery-item-id="R738" data-store-number="R738" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/myeongdong/" tabindex="0">
                                         <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
-                                            <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
+                                            <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&output-format=jpg&output-quality=85&interpolation=progressive-bicubic" alt="" class="store-card-image">
                                         </div>
                                         <div class="card-content">
                                             <h3 class="store-name">Apple 명동</h3>
@@ -168,9 +154,6 @@
                                         </div>
                                     </a>
                                 </div>
-                                <!-- <div id="storecard-item-3" data-index="2" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
-                                <div id="storecard-item-4" data-index="3" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
-                                <div id="storecard-item-5" data-index="4" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div> -->
                             </div>
                         </div>
                         <div class="paddlenav paddlenav-framed paddlenav-compact" data-analytics-gallery-interaction-type="paddlenav">
@@ -184,7 +167,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
