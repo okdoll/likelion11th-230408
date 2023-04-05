@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
 }
 
 .body {
@@ -33,6 +34,7 @@
     margin: 0;
     padding: 0;
     float: center;
+    align-items: center;
 }
   
 .navbar-item {
@@ -44,7 +46,7 @@
 
 }
 
-.nav-search {
+/* .nav-search {
     width: 100%;
     height: 54px;
     background-color: #F2F2F2;
@@ -81,6 +83,13 @@
     padding: 0;
     font-size: large;
 
+}
+
+.nav-search-input {
+    position: relative;
+    max-width: 432px;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .nav-search-bar-input-section {
@@ -120,9 +129,119 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 50%
+} */
+
+
+
+.store-search-wrapper{
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal
+
+}
+.store-search-wrapper .store-search-bar {
+    background-color: #f2f2f2;
+    color: #1d1d1f;
+    padding: 8px 0;
+    border-bottom: 1px solid hsla(0,0%,73%,.6)
 }
 
-.form
+.store-search-wrapper .store-search-bar .store-search-bar__content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    max-width: 1018px;
+    width: 1018px
+}
+
+.store-search-heading {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(0 0 99.9% 99.9%);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
+
+.store-search-wrapper .store-search-bar .store-search-section-heading a {
+    margin-bottom: 0;
+    font-size: 21px;
+    line-height: 1.1904761905;
+    font-weight: 600;
+    letter-spacing: .011em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f
+}
+
+.store-search-input {
+    position: relative;
+    max-width: 432px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.store-search-input .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 19px;
+    transform: translateY(-50%);
+    color: #86868b;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    background-image: url(https://www.apple.com/retail/retail-static/assets/images/icons/spyglass_icon_large.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50%
+}
+
+.store-search-section-input {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 0;
+
+}
+
+.store-search-input .form-textbox-input {
+    height: 38px;
+    padding: 0 40px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: thin;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 15px;
+    width: 432px;
+    text-overflow: ellipsis
+
+}
+
+.store-search-wrapper .store-search-bar .store-search-bar__content .store-search-section-storelist {
+    text-align: right;
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.2857742857;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    color: #06c;
+}
+
 
 .complete-store-list {
     font-size: small;
