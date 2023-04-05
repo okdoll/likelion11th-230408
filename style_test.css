@@ -175,6 +175,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 13px;
 }
 
 /* 서울특별시 근처 매장 */
@@ -187,7 +188,7 @@
 
 .search-result-blank {
     width: 100%;
-    height: 36px;
+    height: 40px;
     background-color: #F2F2F2;
     margin: 0;
 }
@@ -199,32 +200,55 @@
     text-align: center;
     background-color: #F2F2F2;
     height: 44px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 
 }
 
 .search-result-blank-2 {
     width: 100%;
-    height: 34px;
+    height: 47px;
     background-color: #F2F2F2;
     margin: 0;
+}
+
+.search-result-seoul-content {
+    display: flex;
+    padding-left:780px;
+    padding-right:780px;
 }
 
 .search-result-myeongdong {
     background-color: white;
     width: 300px;
     height: 331px;
-    border-radius: 5%;
+    border-radius: 3%;
+    font-style: normal;
+}
+
+.search-result-garosugil {
+    background-color: white;
+    width: 300px;
+    height: 331px;
+    border-radius: 3%;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+.search-result-gangnam {
+    background-color: white;
+    width: 300px;
+    height: 331px;
+    border-radius: 3%;
     font-style: normal;
 }
 
 .store-card-image {
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
 }
 
-.myeongdong-content {
+.seoul-store-content {
     text-align: left;
     width: 300px;
     height: 162.25;
@@ -232,9 +256,11 @@
     font-size: small;
 }
 
+
 .store-name {
     padding-bottom: 10px;
     font-weight: bold;
+    font-size: 13pt;
 }
 
 .store-address{
@@ -251,14 +277,14 @@
 .come-see {
     width: 100%;
     height: 1090px;
-    background-color: rgb(89, 89, 164);
+    background-color: #F2F2F2;
     text-align: center;
 }
 
 .come-see-blank {
     width: 100%;
     height: 43px;
-    background-color: blueviolet;
+    background-color: #F2F2F2;
     margin: 0;
 }
 
@@ -270,13 +296,13 @@
     align-items: center;
     text-align: center;
     font-size: xx-large;
-    background-color: rgb(207, 152, 152);
+    background-color: #F2F2F2;
 }
 
 .come-see-blank-2 {
     width: 100%;
     height: 10px;
-    background-color: blueviolet;
+    background-color:#F2F2F2;
     margin: 0;
 }
 
@@ -288,13 +314,13 @@
     align-items: center;
     text-align: center;
     font-size: large;
-    background-color: rgb(99, 145, 130);
+    background-color:#F2F2F2;
 }
 
 .come-see-blank-3 {
     width: 100%;
     height: 43px;
-    background-color: blueviolet;
+    background-color:#F2F2F2;
     margin: 0;
 }
 
