@@ -31,7 +31,13 @@
             <div class="navbar-container">
                 <ul class="navbar-menu">
                     <li class="navbar-item"><a onClick="window.location.reload()" style="cursor: pointer;" id = "nav-apple">
-                        <img src="./apple logo.png" border="0" width = "15" alt="Apple"></a></li>
+                        <!-- <img src="./apple logo.png" border="0" width = "15" alt="Apple"></a></li> -->
+                        <a href="/kr/" data-globalnav-item-name="apple" data-analytics-title="apple home" aria-label="Apple" class="globalnav-link globalnav-link-apple">
+                            <span class="globalnav-image-regular globalnav-link-image">
+                                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"/>
+                                </svg>
+                            </span>
                     <li class="navbar-item"><a href="https://www.apple.com/kr/store">스토어</a></li>
                     <li class="navbar-item"><a href="https://www.apple.com/kr/mac/">Mac</a></li>
                     <li class="navbar-item"><a href="https://www.apple.com/kr/ipad/">iPad</a></li>
@@ -61,7 +67,7 @@
                     <li class="nav-search-bar-li">
                         <div class="nav-search-bar-input-section">
                             <div class="nav-search-input">
-                                <img class="search-input-icon" src="./search icon.svg" border="0" width = "16" alt="Search"></a>
+                                <span class="search-icon"></span>
                                 <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autoCorrect="off" 
                                 autoCapitalize="off" autoComplete="off" spellcheck="false" role="combobox" aria-label="매장 찾기" 
                                 aria-expanded="false" aria-owns="form-autocomplete-listbox"/>
@@ -103,93 +109,57 @@
                     <div id="stores-gallery" aria-label="stores gallery" class="multi-slide-gallery" role="group">
                         <div class="content">
                             <div class="item-container" style="transform: translate3d(0px, 0px, 0px);">
-                                <div id="storecard-item-1" data-index="0" class="gallery-item storecard current" data-ac-gallery-item="true" style="opacity: 1; transform: translate(0px, 0px);">
-                                    <div class="store-card-wrapper visible" style="transition-delay: 0.09s; height: 331px; display: flex;">
-                                        <a class="store-card" data-analytics-click="prop3: R738" data-analytics-gallery-item-id="R738" data-store-number="R738" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/myeongdong/" tabindex="0">
-                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
-                                                <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
+                                <div class="store-card-wrapper visible" style="transition-delay: 0.09s; height: 331px; display: flex;">
+                                    <a class="store-card" data-analytics-click="prop3: R738" data-analytics-gallery-item-id="R738" data-store-number="R738" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/myeongdong/" tabindex="0">
+                                        <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                            <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="store-name">Apple 명동</h3>
+                                            <div class="store-address-block store-address">
+                                                <address>서울 중구 남대문로 2가 9-1<br>하이드파크</address>
                                             </div>
-                                            <div class="card-content">
-                                                <h3 class="store-name">Apple 명동</h3>
-                                                <div class="store-address-block store-address">
-                                                    <address>서울 중구 남대문로 2가 9-1<br>하이드파크</address>
-                                                </div>
-                                                <div class="search-result-status store-details">
-                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
-                                                </div>
+                                            <div class="search-result-status store-details">
+                                                <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="store-card-wrapper visible" style="transition-delay: 0.18s; height: 331px; display: flex;">
-                                        <a class="store-card" data-analytics-click="prop3: R692" data-analytics-gallery-item-id="R692" data-store-number="R692" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/garosugil/" tabindex="0">
-                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
-                                                <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R692.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
-                                            </div>
-                                            <div class="card-content">
-                                                <h3 class="store-name">Apple 가로수길</h3>
-                                                <div class="store-address-block store-address">
-                                                    <address>서울 강남구<br>가로수길 43</address>
-                                                </div>
-                                                <div class="search-result-status store-details">
-                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="store-card-wrapper visible" style="transition-delay: 0.27s; height: 331px; display: flex;">
-                                        <a class="store-card" data-analytics-click="prop3: R691" data-analytics-gallery-item-id="R691" data-store-number="R691" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/gangnam/" tabindex="0">
-                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
-                                                <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/5c9/186/ab1/e1d/2ce/f8c/188/19e/095/82d/bfc0e599-00b9-3140-94ac-db275dde560b_og_large_2x.png" alt="" class="store-card-image">
-                                            </div>
-                                            <div class="card-content">
-                                                <h3 class="store-name">Apple 강남</h3>
-                                                <div class="store-address-block store-address">
-                                                    <address>서울 강남구<br>강남대로 464</address>
-                                                </div>
-                                                <div class="search-result-status store-details">
-                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div id="storecard-item-2" data-index="1" class="gallery-item storecard" data-ac-gallery-item="true" style="opacity: 1; transform: translate(680px, 0px);" data-original-aria-hidden="" aria-hidden="true">
-                                    <div class="store-card-wrapper visible" style="height: 331px; display: flex;">
-                                        <a class="store-card" data-analytics-click="prop3: R747" data-analytics-gallery-item-id="R747" data-store-number="R747" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/yeouido/" tabindex="-1">
-                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
-                                                <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/508/95b/5ee/dbb/dc7/a26/5d8/f08/f35/757/608992af-2279-3265-aa6a-b34941223458_Yeouido_20210226_TF_RetailStorePage_card_large_2x.jpg" alt="" class="store-card-image">
+                                <div class="store-card-wrapper visible" style="transition-delay: 0.18s; height: 331px; display: flex;">
+                                    <a class="store-card" data-analytics-click="prop3: R692" data-analytics-gallery-item-id="R692" data-store-number="R692" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/garosugil/" tabindex="0">
+                                        <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                            <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R692.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="store-name">Apple 가로수길</h3>
+                                            <div class="store-address-block store-address">
+                                                <address>서울 강남구<br>가로수길 43</address>
                                             </div>
-                                            <div class="card-content">
-                                                <h3 class="store-name">Apple 여의도</h3>
-                                                <div class="store-address-block store-address">
-                                                    <address>서울 영등포구 국제금융로 10<br>IFC MALL, L1</address>
-                                                </div>
-                                                <div class="search-result-status store-details">
-                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
-                                                </div>
+                                            <div class="search-result-status store-details">
+                                                <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="store-card-wrapper visible" style="height: 331px; display: flex;">
-                                        <a class="store-card" data-analytics-click="prop3: R751" data-analytics-gallery-item-id="R751" data-store-number="R751" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/jamsil/" tabindex="-1">
-                                            <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
-                                                <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/265/9d3/659/93d/31c/96f/a1e/e17/b8a/ea2/57402eef-cc9d-3954-af59-f92535151c23_Apple_Jamsil_card_large_2x.png" alt="" class="store-card-image">
-                                            </div>
-                                            <div class="card-content">
-                                                <h3 class="store-name">Apple 잠실</h3>
-                                                <div class="store-address-block store-address">
-                                                    <address>서울 송파구 올림픽로 300<br>롯데월드몰 1F</address>
-                                                </div>
-                                                <div class="search-result-status store-details">
-                                                    <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div id="storecard-item-3" data-index="2" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
+                                <div class="store-card-wrapper visible" style="transition-delay: 0.27s; height: 331px; display: flex;">
+                                    <a class="store-card" data-analytics-click="prop3: R691" data-analytics-gallery-item-id="R691" data-store-number="R691" lang="ko-KR" hreflang="ko-KR" href="/kr/retail/gangnam/" tabindex="0">
+                                        <div class="aspect-ratio store-card-image-container  visible" data-testid="aspect-ratio" style="padding-bottom: 56.25%;">
+                                            <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/5c9/186/ab1/e1d/2ce/f8c/188/19e/095/82d/bfc0e599-00b9-3140-94ac-db275dde560b_og_large_2x.png" alt="" class="store-card-image">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="store-name">Apple 강남</h3>
+                                            <div class="store-address-block store-address">
+                                                <address>서울 강남구<br>강남대로 464</address>
+                                            </div>
+                                            <div class="search-result-status store-details">
+                                                <span class="search-result-status-current-status">폐점 시간 10:00 오후</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- <div id="storecard-item-3" data-index="2" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
                                 <div id="storecard-item-4" data-index="3" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
-                                <div id="storecard-item-5" data-index="4" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div>
+                                <div id="storecard-item-5" data-index="4" class="gallery-item storecard" data-ac-gallery-item="true" style="display: none;"></div> -->
                             </div>
                         </div>
                         <div class="paddlenav paddlenav-framed paddlenav-compact" data-analytics-gallery-interaction-type="paddlenav">

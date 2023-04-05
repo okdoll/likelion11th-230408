@@ -94,13 +94,35 @@
 }
 
 .form-textbox-input {
+    height: 38px;
+    padding: 0 40px;
+    margin-bottom: 0;
+    border-radius: 12px;
+    border-color: #c1c1c1;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 15px;
     width: 100%;
+    text-overflow: ellipsis
 
 }
 
-.search-input-icon {
-    position:absolute;
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 19px;
+    transform: translateY(-50%);
+    color: #86868b;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    background-image: url(https://www.apple.com/retail/retail-static/assets/images/icons/spyglass_icon_large.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50%
 }
+
+.form
 
 .complete-store-list {
     font-size: small;
@@ -150,8 +172,8 @@
     margin: 0;
 }
 
-.search-result-content {
-    
+.item-container {
+    float: left ;
 }
 
 .come-see {

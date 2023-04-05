@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./search-bar-style.css"> 
+
+</head>
+<body>
+    <div class="store-search-wrapper" data-analytics-activitymap-region-id="find a store">
+        <div class="store-search-bar ">
+            <div class="store-search-bar__content">
+                <div class="store-search-section-heading">
+                    <a role="button" tabindex="0" hreflang="ko-KR" href="/kr/retail/">매장 찾기</a>
+                </div>
+                <div class="store-search-section-input">
+                    <div class="store-search-input   ">
+                        <span class="search-icon"></span>
+                        <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" role="combobox" aria-label="매장 찾기" aria-expanded="false" aria-owns="form-autocomplete-listbox">
+                        <button type="button" aria-label="검색 결과 지우기" class="reset-button icon icon-resetsolid " tabindex="0">
+                            <span aria-hidden="true">검색 결과 지우기</span>
+                        </button>
+                        <div id="form-autocomplete-listbox" role="listbox">
+                            <aside class="form-autocomplete-results ">
+                                <div class="use-geolocation">
+                                    <ul id="store-search-geolocation" role="group" aria-labelledby="store-search-geolocation-label">
+                                        <li>
+                                            <a role="option" aria-selected="false" tabindex="0" class="" id="store-search-geolocation-label">
+                                                <span>나의 현재 위치 사용</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <div class="form-autocomplete-results-other-links">
+                                <a data-analytics-title="complete store list" hreflang="ko-KR" href="/kr/retail/storelist/">전체 매장 목록</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-search-section-storelist">
+                    <a data-analytics-title="complete store list" hreflang="ko-KR" href="/kr/retail/storelist/">전체 매장 목록</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
