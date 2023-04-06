@@ -592,8 +592,8 @@
 
 .now-apple {
     width: 100%;
-    height: 730px;
-    background-color: rgb(224, 155, 43);
+    height: 910px;
+    background-color: #F2F2F2;
     text-align: center;
 }
 
@@ -611,21 +611,119 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: xx-large;
+    font-size: 35px;
     background-color: #F2F2F2;
 }
 
 .now-apple-blank-2 {
     width: 100%;
     height: 43px;
-    background-color: blueviolet;
+    background-color: #F2F2F2;
     margin: 0;
 }
+
+/* grid 공통 */
+
+.now-apple-grid {
+    width: 1020px;
+    height: 768px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 510px 510px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.now-apple-card-small{
+    width: 510px;
+    height: 728px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+
+}
+
+.now-apple-card-content {
+    background-color: white;
+    border-radius: 2%;
+    width: 475px;
+    height: 728px;
+}
+
+.now-apple-img {
+    width: 475px;
+    height: 475px;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.now-apple-content-1{
+    width: 475px;
+    height: 253px;
+    padding: 45px 50px;
+    text-align: left;
+    background-color: white;
+    margin: 0;
+    border-radius: 2%;
+}
+
+.now-apple-content-2{
+    width: 475px;
+    height: 253px;
+    padding: 30px 50px;
+    text-align: left;
+    background-color: white;
+    margin: 0;
+    border-radius: 2%;
+}
+
+.now-apple-content-eyebrow-1 {
+    width: 375px;
+    height: 27px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.now-apple-content-eyebrow-2 {
+    width: 375px;
+    height: 27px;
+    font-weight: 100;
+    padding: 0;
+}
+
+.now-apple-content-headline{
+    width: 375px;
+    height: 39px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.now-apple-content-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.now-apple-content-li {
+    width: 375px;
+    height: 27px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.now-apple-content-li-2 {
+    width: 375px;
+    height: 27px;
+    font-size: 13px;
+}
+
+/* footer */
 
 .section-to-footer-blank {
     width: 100%;
     height: 82px;
-    background-color: blueviolet;
+    background-color: #F2F2F2;
     margin: 0;
 }
 
