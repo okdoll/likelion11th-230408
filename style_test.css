@@ -733,6 +733,38 @@
     background-color: #F5F5F7;
 }
 
+.footer-content {
+    width: 1024px;
+    height: 801.91px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.footer-sosumi {
+    width: 980px;
+    height: 268.67px;
+    padding: 0;
+    background-color: #F5F5F7;
+    border-bottom: 1px solid hsla(0,0%,73%,.6)
+}
+
+.footer-sosumi-section {
+    width: 980px;
+    height: 268.67px;
+    padding-top: 17px;
+    padding-bottom: 11.667px;
+    font-size: 11px;
+    margin: 0;
+}
+
+.footer-sosumi-ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
 /* .ps-portal {
 
     background-color:#F5F5F7;
