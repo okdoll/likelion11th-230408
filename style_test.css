@@ -780,6 +780,100 @@
     width: 980px;
     height: 363.13px;
     background-color: antiquewhite;
+    display: flex;
+}
+
+.footer-directory-content-column {
+    width: 196px;
+    height: 363.13px;
+    background-color: #F5F5F7;
+}
+
+.directory-column-section-title {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.ac-gf-directory-column-section-title {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.footer-directory-column-shopping {
+    width: 196px;
+    height: 246.34px;
+    background-color:#F5F5F7;
+}
+
+.directory-column-section-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+.ac-gf-directory-column-section-list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+.directory-column-section-item {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.ac-gf-directory-column-section-item{
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.footer-directory-column-wallet {
+    width: 196px;
+    height: 65.59px;
+    padding-top: 24px;
+    background-color: #F5F5F7;
+}
+
+.directory-column-section-account {
+    width: 196px;
+    height: 92.78px;
+}
+
+.directory-column-section-entertainment {
+    width: 196px;
+    height: 219.16px;
+    padding-top: 24px;
+}
+
+.directory-column-section-store {
+    width: 196px;
+    height: 271.94px;
+}
+
+.directory-column-section-business {
+    width: 196px;
+    height: 67.19px;
+}
+
+.directory-column-section-education {
+    width: 196px;
+    height: 116.78px;
+    padding-top: 24px;
+}
+
+.directory-column-section-responsibility{
+    width: 196px;
+    height: 143.97px;
+}
+
+.directory-column-section-about{
+    width: 196px;
+    height: 219.16px;
+    padding-top: 24px;
 }
 
 
