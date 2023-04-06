@@ -216,6 +216,9 @@
     display: flex;
     padding-left:780px;
     padding-right:780px;
+    margin-left: 166.333px;
+    margin-right: 166.333px;
+    position: relative;
 }
 
 .search-result-myeongdong {
@@ -224,6 +227,10 @@
     height: 331px;
     border-radius: 3%;
     font-style: normal;
+    margin-right: 20px;
+    position:absolute;
+    left: 50%;
+    margin-left: -490px;
 }
 
 .search-result-garosugil {
@@ -233,6 +240,9 @@
     border-radius: 3%;
     font-style: normal;
     margin: 0 auto;
+    position:absolute;
+    left: 50%;
+    margin-left: -150px;
 }
 
 .search-result-gangnam {
@@ -241,6 +251,10 @@
     height: 331px;
     border-radius: 3%;
     font-style: normal;
+    margin-left: 20px;
+    position:absolute;
+    left: 50%;
+    margin-left: 190px;
 }
 
 .store-card-image {
@@ -400,7 +414,7 @@
     text-align: center;
 }
 
-.program-content-image {
+.program-content-image-trade {
     border-radius: 3%;
 }
 
