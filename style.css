@@ -1,94 +1,975 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100,300,400,500,700,900&display=swap');
+
+* {
+    box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    
+}
+
+.body {
     margin: 0;
     padding: 0;
 }
 
-.navbar {
+.nav-menu {
+    width: 100%;
+    height: 44px;
     background-color: #F2F2F2;
-    height: 50px;
+    text-align: center;
+    list-style-type: none;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  .navbar-container {
-    display: flex;
     align-items: center;
-  }
-  
-  .navbar-menu {
+
+}
+
+.navbar-container {
+    display: table-cell;
+    vertical-align: middle;
+    float: center;
+    line-height: 50px;
+}
+
+.navbar-menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     float: center;
-  }
+    align-items: center;
+}
   
-  .navbar-item {
+.navbar-item {
     color: black;
     margin-right: 32px;
     font-size: 11px;
     font-weight: 400;
     display:inline-block;
 
-  }
-  
-  .navbar-item:last-child {
-    margin-right: 0;
-  }
+}
 
+/* 매장찾기 3개 */
 
-  /* 매장 찾기  */
-
-.store-search{
-    background-color: #F2F2F2;
-    height: 50px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
-  
- .store-search-container{
-    display: flex;
-    align-items: center;
- }
-
- .store-search-bar_content{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: center;
-    align-items: center;
- }
-
- .store-search-section-item{
-    color: black;
-    font-size: 11px;
+.store-search-wrapper{
+    font-size: 17px;
+    line-height: 1.4705882353;
     font-weight: 400;
-    display:inline-block;
- }
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal
 
- .search-icon {
+}
+.store-search-wrapper .store-search-bar {
+    background-color: #f2f2f2;
+    color: #1d1d1f;
+    padding: 8px 0;
+    border-bottom: 1px solid hsla(0,0%,73%,.6)
+}
+
+.store-search-wrapper .store-search-bar .store-search-bar__content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    max-width: 1018px;
+    width: 1018px
+}
+
+.store-search-heading {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(0 0 99.9% 99.9%);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
+
+.store-search-wrapper .store-search-bar .store-search-section-heading a {
+    margin-bottom: 0;
+    font-size: 21px;
+    line-height: 1.1904761905;
+    font-weight: 600;
+    letter-spacing: .011em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f
+}
+
+.store-search-input {
+    position: relative;
+    max-width: 432px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.store-search-input .search-icon {
     position: absolute;
     left: 15px;
     top: 19px;
     transform: translateY(-50%);
-    color: #a3a3a7;
+    color: #86868b;
     width: 16px;
     height: 16px;
     pointer-events: none;
-    background-image: url(/retail/retail-static/assets/images/icons/spyglass_icon_large.svg);
+    background-image: url(https://www.apple.com/retail/retail-static/assets/images/icons/spyglass_icon_large.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position: 50%;
- }
-  
-  
+    background-position: 50%
+}
+
+.store-search-section-input {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 0;
+
+}
+
+.store-search-input .form-textbox-input {
+    height: 38px;
+    padding: 0 40px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: thin;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 15px;
+    width: 432px;
+    text-overflow: ellipsis
+
+}
+
+.store-search-wrapper .store-search-bar .store-search-bar__content .store-search-section-storelist {
+    text-align: right;
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.2857742857;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    color: #06c;
+}
+
+
+.complete-store-list {
+    font-size: small;
+}
+
+/* 중고 아이폰 보상 판매 */
+
+.ribbon-content {
+    width: 100%;
+    height: 76px;
+    background-color:#F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* 서울특별시 근처 매장 */
+
+.search-result {
+    width: 100%;
+    height: 465px;
+    background-color: #F2F2F2;
+}
+
+.search-result-blank {
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.search-result-seoul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F2F2F2;
+    height: 44px;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.search-result-blank-2 {
+    width: 100%;
+    height: 47px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.search-result-seoul-content {
+    display: flex;
+    padding-left:780px;
+    padding-right:780px;
+    margin-left: 166.333px;
+    margin-right: 166.333px;
+    position: relative;
+}
+
+.search-result-myeongdong {
+    background-color: white;
+    width: 300px;
+    height: 331px;
+    border-radius: 3%;
+    font-style: normal;
+    margin-right: 20px;
+    position:absolute;
+    left: 50%;
+    margin-left: -490px;
+}
+
+.search-result-garosugil {
+    background-color: white;
+    width: 300px;
+    height: 331px;
+    border-radius: 3%;
+    font-style: normal;
+    margin: 0 auto;
+    position:absolute;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.search-result-gangnam {
+    background-color: white;
+    width: 300px;
+    height: 331px;
+    border-radius: 3%;
+    font-style: normal;
+    margin-left: 20px;
+    position:absolute;
+    left: 50%;
+    margin-left: 190px;
+}
+
+.store-card-image {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.seoul-store-content {
+    text-align: left;
+    width: 300px;
+    height: 162.25;
+    padding: 22px 30px 20px;
+    font-size: small;
+}
+
+
+.store-name {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.store-address{
+    font-weight: 100;
+}
+
+
+/* 애플의 매장 체험 */
+
+.item-container {
+    float: left ;
+}
+
+.come-see {
+    width: 100%;
+    padding-left: 223.667px;
+    padding-right: 223.667px;
+    height: 1512px;
+    background-color: #F2F2F2;
+    text-align: center;
+    margin: 0;
+}
+
+.come-see-blank {
+    width: 100%;
+    height: 43px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.come-see-title {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #F2F2F2;
+}
+
+.come-see-blank-2 {
+    width: 100%;
+    height: 10px;
+    background-color:#F2F2F2;
+    margin: 0;
+}
+
+.come-see-advice {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    background-color:#F2F2F2;
+}
+
+.come-see-blank-3 {
+    width: 100%;
+    height: 43px;
+    background-color:#F2F2F2;
+    margin: 0;
+}
+
+.program-section-grid {
+    width: 1020px;
+    height: 1302px;
+    display: grid;
+    grid-template-columns: 510px 510px;
+    grid-template-rows: 434px 434px 434px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.program-card-small {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#F2F2F2;
+    margin: 0 auto;
+}
+
+
+.program-card-content{
+    width: 470px;
+    height: 394px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.program-card-content-copy {
+    width: 470px;
+    height: 394px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top:  107px;
+    padding-bottom: 55px;
+}
+
+.program-card-content-copy-trade{
+    width: 470px;
+    height: 394px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top:  110px;
+    padding-bottom: 55px;
+
+}
+
+.program-card-content-copy-icloud{
+    width: 470px;
+    height: 394px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top:  55px;
+    padding-bottom: 55px;
+}
+
+.program-card-content_icon {
+    width: 75px;
+    height: 75px;
+    margin: 0px 142.5px;
+}
+
+.program-card-content_icon-icloud {
+    width:64px;
+    height: 44px;
+}
+
+.program-card-content_headline{
+    font-size: 25px;
+    text-align: center;
+}
+
+.program-content-image-trade {
+    border-radius: 3%;
+}
+
+.program-card-content_headline-icloud{
+    width: 360px;
+    height: 156px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.blue-light-icon-wrapper{
+    padding: 10px;
+}
+.program-card-content_links {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+}
+
+.icon-copy {
+    text-align: center;
+    padding-right: 20px;
+}
+
+/* 시작부터 사용까지  */
+
+.get-started {
+    width: 100%;
+    height: 1075px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+.get-started-blank {
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+
+.get-started-title {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #F2F2F2;
+}
+
+.get-started-blank-2 {
+    width: 100%;
+    height: 10px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.get-started-advice {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+
+.get-started-blank-3 {
+    width: 100%;
+    height: 43px;
+    background-color:#F2F2F2;
+    margin: 0;
+}
+
+
+.expert-help-section-grid{
+    width: 1020px;
+    height: 868px;
+    margin: 0 auto;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 434px 434px;
+    padding-left: 0;
+}
+
+.expert-help-card-small {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1020px;
+    height: 434px;
+
+}
+
+.expert-help-card-content {
+    width: 980px;
+    height: 394px;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 2%;
+
+}
+
+.expert-help-content {
+    width: 490px;
+    height: 394px;
+    padding: 30px;
+    align-items: center;
+}
+
+/* genius bar */
+
+.expert-help-genius-img {
+    width: 490px;
+    height: 394px;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.expert-help-content-eyebrow {
+    height: 25px;
+    width: 430px;
+    margin-top: 75px;
+}
+
+.expert-help-content-headline {
+    width: 430px;
+    height: 78px;
+    margin-top: 4px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.expert-help-content-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expert-help-content-li-1{
+    width: 430px;
+    height: 27px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+}
+
+.expert-help-content-li-2{
+    width: 430px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+/* apple at work */
+
+.expert-help-work-img {
+    width: 490px;
+    height: 394px;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+
+.expert-help-content-eyebrow-2 {
+    height: 25px;
+    width: 430px;
+    margin-top: 100px;
+}
+
+/* 지금 apple에서는 */
+
+.now-apple {
+    width: 100%;
+    height: 910px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+.now-apple-blank {
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.now-apple-title {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    background-color: #F2F2F2;
+}
+
+.now-apple-blank-2 {
+    width: 100%;
+    height: 43px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+/* grid 공통 */
+
+.now-apple-grid {
+    width: 1020px;
+    height: 768px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 510px 510px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.now-apple-card-small{
+    width: 510px;
+    height: 728px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+
+}
+
+.now-apple-card-content {
+    background-color: white;
+    border-radius: 2%;
+    width: 475px;
+    height: 728px;
+}
+
+.now-apple-img {
+    width: 475px;
+    height: 475px;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.now-apple-content-1{
+    width: 475px;
+    height: 253px;
+    padding: 45px 50px;
+    text-align: left;
+    background-color: white;
+    margin: 0;
+    border-radius: 2%;
+}
+
+.now-apple-content-2{
+    width: 475px;
+    height: 253px;
+    padding: 30px 50px;
+    text-align: left;
+    background-color: white;
+    margin: 0;
+    border-radius: 2%;
+}
+
+.now-apple-content-eyebrow-1 {
+    width: 375px;
+    height: 27px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.now-apple-content-eyebrow-2 {
+    width: 375px;
+    height: 27px;
+    font-weight: 100;
+    padding: 0;
+}
+
+.now-apple-content-headline{
+    width: 375px;
+    height: 39px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.now-apple-content-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.now-apple-content-li {
+    width: 375px;
+    height: 27px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.now-apple-content-li-2 {
+    width: 375px;
+    height: 27px;
+    font-size: 13px;
+}
+
+/* footer */
+
+.section-to-footer-blank {
+    width: 100%;
+    height: 82px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 801.91px;
+    background-color: #F5F5F7;
+}
+
+.footer-content {
+    width: 1024px;
+    height: 801.91px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 0 auto;
+    background-color: #F5F5F7;
+}
+
+.footer-sosumi {
+    width: 980px;
+    height: 268.67px;
+    padding: 0;
+    background-color: #F5F5F7;
+    border-bottom: 1px solid hsla(0,0%,73%,.6);
+}
+
+.footer-sosumi-section {
+    width: 980px;
+    height: 268.67px;
+    padding-top: 17px;
+    padding-bottom: 11.667px;
+    font-size: 11px;
+    margin: 0;
+}
+
+.footer-sosumi-ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    color: #6E6E73;
+}
+
+.footer-nav {
+    width: 980px;
+    height: 57.45px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-color: #F5F5F7;
+    display: flex;
+}
+
+/* 디렉토리 */
+.footer-directory-content {
+    width: 980px;
+    height: 363.13px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.footer-directory-content-column {
+    width: 196px;
+    height: 363.13px;
+    background-color: #F5F5F7;
+}
+
+.directory-column-section-title {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.ac-gf-directory-column-section-title {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.footer-directory-column-shopping {
+    width: 196px;
+    height: 246.34px;
+    background-color:#F5F5F7;
+}
+
+.directory-column-section-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+.ac-gf-directory-column-section-list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+.directory-column-section-item {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.ac-gf-directory-column-section-item{
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.footer-directory-column-wallet {
+    width: 196px;
+    height: 65.59px;
+    padding-top: 24px;
+    background-color: #F5F5F7;
+}
+
+.directory-column-section-account {
+    width: 196px;
+    height: 92.78px;
+}
+
+.directory-column-section-entertainment {
+    width: 196px;
+    height: 219.16px;
+    padding-top: 24px;
+}
+
+.directory-column-section-store {
+    width: 196px;
+    height: 271.94px;
+}
+
+.directory-column-section-business {
+    width: 196px;
+    height: 67.19px;
+}
+
+.directory-column-section-education {
+    width: 196px;
+    height: 116.78px;
+    padding-top: 24px;
+}
+
+.directory-column-section-responsibility{
+    width: 196px;
+    height: 143.97px;
+}
+
+.directory-column-section-about{
+    width: 196px;
+    height: 219.16px;
+    padding-top: 24px;
+}
+
+
+/* 마지막 섹션 시작 */
+
+.footer-final {
+    width: 980px;
+    height: 112.67px;
+    padding-top: 34px;
+    padding-bottom: 21px;
+    background-color: #F5F5F7;
+}
+
+.footer-shop {
+    width: 980px;
+    height: 24.67px;
+    padding-bottom: 8.667px;
+    margin-bottom: 7px;
+    background-color: #F5F5F7;
+    border-bottom: 1px solid hsla(0,0%,73%,.6);
+}
+
+.footer-shop-ment {
+    color: #6E6E73;
+    font-size: 11px;
+}
+
+.footer-legal {
+    width: 980px;
+    height: 26px;
+    display: flex;
+}
+
+.footer-legal-copyright {
+    width: 226.6px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: 30px;
+    color: #6E6E73;
+    font-size: 11px;
+}
+
+.footer-legal-link {
+    width: 385.02px;
+    height: 21px;
+    margin-top: 5px;
+    margin-right: 30px;
+    background-color: #F5F5F7;
+    list-style-type: none;
+}
+
+.footer-legal-link-item-privacy {
+    color: #6E6E73;
+    font-size: 11px;
+    float: left;
+    border-right:1px solid hsla(0,0%,73%,.6);
+    height: 16px;
+    width: 88.26px;
+}
+.footer-legal-link-item-site {
+    color: #6E6E73;
+    font-size: 11px;
+    float: left;
+    border-right:1px solid hsla(0,0%,73%,.6);
+    height: 16px;
+    width: 93.19px;
+    margin-left: 5px;
+}
+
+.footer-legal-link-item-refunds {
+    color: #6E6E73;
+    font-size: 11px;
+    float: left;
+    border-right:1px solid hsla(0,0%,73%,.6);
+    height: 16px;
+    width: 62.3px;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+.footer-legal-link-item-legal {
+    color: #6E6E73;
+    font-size: 11px;
+    float: left;
+    border-right:1px solid hsla(0,0%,73%,.6);
+    height: 16px;
+    width: 50.36px;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+.footer-legal-link-item-sitemap {
+    color: #6E6E73;
+    font-size: 11px;
+    float: left;
+    height: 16px;
+    width: 50.36px;
+    margin-left: 10px;
+}

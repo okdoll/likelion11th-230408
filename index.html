@@ -4,63 +4,542 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store - 매장 찾기 - Apple (KR)</title>
+    <!-- <title>Apple Store - 매장 찾기 - Apple (KR)</title> -->
 
-    <title>Apple Store 매장 찾기 - Apple (KR)</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./gray apple.png" />
-    
     <link rel="stylesheet" href="./style.css">
 
+    <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
     <!-- 링크 버튼 색상 변경 방지 -->
     <style type="text/css">
         a:link { color: black; text-decoration: none;}	
         a:visited { color: black; text-decoration: none;}	
         a:hover { color: black; text-decoration: underline;}
+        /* * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; } */
     </style>
-    
 
 </head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <ul class="navbar-menu" >
-                <li class="navbar-item"><a onClick="window.location.reload()" style="cursor: pointer;" id = "nav-apple">
-                    <img src="./apple logo.png" border="0" width = "15" alt="Apple"></a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/store">스토어</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/mac/">Mac</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/ipad/">iPad</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/iphone/">iPhone</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/watch/">Watch</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/airpods/">AirPods</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/tv-home/">TV 및 홈</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/services/">엔터테인먼트</a></li>
-                <li class="navbar-item"><a href="https://www.apple.com/kr/shop/accessories/all">액세서리</a></li>
-                <li class="navbar-item"><a href="https://support.apple.com/ko-kr">고객지원</a></li>
-                <li class="navbar-item"><a href="#">
-                    <img src="./search icon.svg" border="0" width = "16" alt="Search"></a></li>
-                <li class="navbar-item"><a href="#">
-                    <img src="./shop icon.png" border="0" width = "15" alt="장바구니"></a></li>
-            </ul>
-        </div>
-    </nav>
 
+<body style="overflow-x:hidden; overflow-y:auto;"> 
     <header>
-        <div class="store-search">
-            <div class="store-search-container">
-                <ul class="store-search-bar_content">
-                    <a class="store-search-bar_name"role="button" tabindex="0" hreflang="ko-KR" href="/kr/retail/"><b>매장 찾기</b></a>
-                    <li class="store-search_search">
-                        <span class="search-icon"></span>
-                        <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색">
-                    </li>
-                    <li class="store-search-list"><a>전체 매장 목록 ></a></li>
+        <nav class="nav-menu">
+            <div class="navbar-container">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a onClick="window.location.reload()" style="cursor: pointer;" id = "nav-apple">
+                        <img src="./apple logo.png" border="0" width = "15" alt="Apple"></a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/store">스토어</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/mac/">Mac</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/ipad/">iPad</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/iphone/">iPhone</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/watch/">Watch</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/airpods/">AirPods</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/tv-home/">TV 및 홈</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/services/">엔터테인먼트</a></li>
+                    <li class="navbar-item"><a href="https://www.apple.com/kr/shop/accessories/all">액세서리</a></li>
+                    <li class="navbar-item"><a href="https://support.apple.com/ko-kr">고객지원</a></li>
+                    <li class="navbar-item"><a href="#">
+                        <img src="./search icon.svg" border="0" width = "16" alt="Search"></a></li>
+                    <li class="navbar-item"><a href="#">
+                        <img src="./shop icon.png" border="0" width = "15" alt="장바구니"></a></li>
                 </ul>
             </div>
-        </div> 
+        </nav>
+
+        <div class="store-search-wrapper" data-analytics-activitymap-region-id="find a store">
+            <div class="store-search-bar ">
+                <div class="store-search-bar__content">
+                    <div class="store-search-section-heading">
+                        <a role="button" tabindex="0" hreflang="ko-KR" href="/kr/retail/">매장 찾기</a>
+                    </div>
+                    <div class="store-search-section-input">
+                        <div class="store-search-input   ">
+                            <span class="search-icon"></span>
+                            <input type="text" value="" class="form-textbox-input" placeholder="위치, 우편번호 또는 매장 이름으로 검색" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" role="combobox" aria-label="매장 찾기" aria-expanded="false" aria-owns="form-autocomplete-listbox">
+                        </div>
+                    </div>  
+                    <div class="store-search-section-storelist">
+                        <a data-analytics-title="complete store list" hreflang="ko-KR" href="/kr/retail/storelist/"><span style="color:#0066CC"><b>전체 매장 목록</b></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+
+
+    <section>
+        <div class="ribbon-content">
+            <p>
+                <span>iPhone 7 Plus 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시 사용할 수 있는 ₩40,000-₩780,000 <br>상당의 크레딧이.*</span> 
+                <a href="https://www.apple.com/kr/shop/goto/buy_iphone" aria-label="iPhone 7 Plus 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시 사용할 수 있는 ₩40,000-₩780,000 상당의 크레딧이.* iPhone 쇼핑하기" class="ribbon-link icon-wrapper" data-analytics-title="shop now">
+                    <span class="icon-copy" style="color:#0066CC">iPhone 쇼핑하기 ></span>
+                    <span class="icon icon-after icon-chevronright"></span>
+                </a>
+            </p>
+        </div>
+
+        <!-- 서울시 근처 매장 -->
+        <div class="search-result"> 
+            <h2 class="search-result-blank"> </h2>
+            <a class="search-result-seoul"><b>서울특별시 근처 매장</b></a>
+            <h2 class="search-result-blank-2"> </h2>
+            <div class="search-result-seoul-content">
+                <div class="search-result-myeongdong">
+                    <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R738.png?resize=600:338&output-format=jpg&output-quality=85&interpolation=progressive-bicubic" alt="" class="store-card-image" width=300px>
+                    <div class="seoul-store-content">
+                        <h3 class="store-name"><b>Apple 명동</b></h3>
+                        <a class="store-address">서울 중구 남대문로 2가 9-1<br>하이드파크<br><br>폐점 시간 10:00 오후</a>
+                    </div>
+                </div>
+                <div class="search-result-garosugil">
+                    <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R692.png?resize=600:338&amp;output-format=jpg&amp;output-quality=85&amp;interpolation=progressive-bicubic" alt="" class="store-card-image" width=300px>
+                    <div class="seoul-store-content">
+                        <h3 class="store-name"><b>Apple 가로수길</b></h3>
+                        <a class="store-address">서울 강남구<br>가로수길 43<br><br>폐점 시간 10:00 오후</a>
+                    </div>
+                </div>
+                <div class="search-result-gangnam">
+                    <img src="https://digitalassets-retail.cdn-apple.com/retail-image-server/5c9/186/ab1/e1d/2ce/f8c/188/19e/095/82d/bfc0e599-00b9-3140-94ac-db275dde560b_og_large_2x.png" alt="" class="store-card-image" width=300px>
+                    <div class="seoul-store-content">
+                        <h3 class="store-name"><b>Apple 강남</b></h3>
+                        <a class="store-address">서울 강남구<br>강남대로 464<br><br>폐점 시간 10:00 오후</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. apple 매장 프로그램 설명 -->
+    <section>
+        <div class="come-see">
+            <h2 class="come-see-blank"> </h2>
+            <div class="come-see-title"><b>Apple의 진짜 매력을 경험할 수 있는 Apple의 매장.</b></div>
+            <h2 class="come-see-blank-2"> </h2>
+            <div class="come-see-advice"><b>Apple 제품을 쇼핑하고, 전문가의 조언도 직접 받을 수 있습니다.</b></div>
+            <h2 class="come-see-blank-3"> </h2>
+            <div class="program-section">
+                <ul class="program-section-grid">
+                    <li class="program-card-small">
+                        <div class="program-card-content">                        <!-- 흰색 부분 -->
+                            <div class="program-card-content-copy">                              <!-- 알맹이 부분 -->
+                                <img class="program-card-content_icon" src="./specialist_icon.png">
+                                <p class="program-card-content_headline"><b>Apple Store에서 스페셜리스트와 <br>함께 하는 일대일 쇼핑.</b><br></p>
+                                <ul class="program-card-content_links">
+                                    <li>
+                                        <a href="https://www.apple.com/kr/retail/instore-shopping-session/" class="blue-light icon-wrapper">
+                                            <span class="icon-copy" style="color:#0066CC"><br>쇼핑 세션 예약하기 ></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="program-card-small">
+                        <div class="program-card-content">
+                            <div class="program-card-content-copy"> 
+                                <img class="program-card-content_icon" src="./pick-up-icon.png">
+                                <p class="program-card-content_headline"><b>갖고 싶은 제품, 오늘 손 안에. </br>온라인 주문하면 바로 픽업할 수 <br>있게 준비해드립니다.</b></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="program-card-small">
+                        <div class="program-card-content">
+                            <div class="program-card-content-copy">  
+                                <a><b>Apple Trade In</b></a>
+                                <p class="program-card-content_headline"><b>대상 기기를 보상 판매하고 </br>즉석 크레딧을 받을 수 있습니다.</b></p>
+                                <ul class="program-card-content_links">
+                                    <li>
+                                        <a href="https://www.apple.com/kr/trade-in/" class="blue-light-icon-wrapper">
+                                            <span class="icon icon-after icon-chevronright"></span>
+                                            <span class="icon-copy" style="color:#0066CC">기기의 가치 확인하기  ></span>
+                                            <span class="icon icon-after icon-chevronright"></span>
+                                        </a>
+                                    </li>
+                                    <li> 
+                                        <a><br></a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-copy" style="color:#0066CC">보상 판매를 위해 기기를 준비하는 법</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="program-card-small">
+                        <div class="program-content">
+                            <img src="./program-content-image.jpg" class ="program-content-image-trade" width="470" height="394">
+                        </div>
+                    </li>
+                    <li class="program-card-small">
+                        <div class="program-card-content">
+                            <div class="program-card-content-copy-icloud">
+                                <img class="program-card-content_icon-icloud" src="./icloud-icon.png">
+                                <p class="program-card-content_headline-icloud"><br><b>저장 공간을 필요한 만큼<br>임시로 사용해 새 iPhone으로<br>모든 걸 옮기세요.</b></p>
+                                <ul class="program-card-content_links">
+                                    <li>
+                                        <a href="https://support.apple.com/ko-kr/HT212732" class="blue-light icon-wrapper">
+                                            <span class="icon-copy" style="color:#0066CC"><br>더 알아보기 ></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="program-card-small">
+                        <div class="program-card-content">
+                            <div class="program-card-content-copy"> 
+                                <img class="program-card-content_icon" src="./accessory-icon.png">
+                                <p class="program-card-content_headline"><br><b>각종 Apple 제품에 꼭 맞게 엄선된 </br>다채로운 액세서리를 쇼핑하세요.</b></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 시작부터 설명해준다 -->
+    <section>
+        <div class="get-started">
+            <h2 class="get-started-blank"> </h2>
+            <div class="get-started-title"><b>시작부터 사용까지, 전문가들이 도움을 드립니다.</b></div>
+            <h2 class="get-started-2"> </h2>
+            <div class="get-started-advice"><b>모든 매장에는 지원, 교육 등을 위한 전문가들이 기다리고 있습니다.</b></div>
+            <h2 class="get-started-blank-3"> </h2>
+            <div class="expert-help-section">
+                <ul class="expert-help-section-grid">
+                    <li class="expert-help-card-small">
+                        <div class="expert-help-card-content">
+                            <div class="expert-help-content">
+                                <h3 class="expert-help-content-eyebrow"><b>Genius Bar</b></h3>
+                                <p class="expert-help-content-headline">Genius Bar에서 전문가의 서비스와 <br>지원을 받을 수 있습니다.</p>
+                                <ul class="expert-help-content-ul">
+                                    <li class="expert-help-content-li-1">
+                                        <span>
+                                            <a href="https://www.apple.com/kr/retail/geniusbar/" style="color:#0066CC">여기에서 도움을 받으세요 ></a>
+                                        </span>
+                                    </li>
+                                    <li class="expert-help-content-li-2">
+                                        <span>
+                                            <a style="color:#0066CC">예약을 위해 기기를 준비하는 법</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img class="expert-help-genius-img" src="https://digitalassets-retail.cdn-apple.com/retail-image-server/a43/46f/3f5/5b2/b72/99a/275/029/432/138/76a2832c-cf92-3a28-bb36-4a850828043e_support-refresh_large_2x_large_2x.jpg">
+                        </div>
+                    </li>
+                    <li class="expert-help-card-small">
+                        <div class="expert-help-card-content">
+                            <img class="expert-help-work-img" src="https://digitalassets-retail.cdn-apple.com/retail-image-server/d99/63b/c53/abf/3ad/35c/f22/c08/749/329/49419904-3556-3ea3-a402-c6720ba4457a_apple_at_work_01_large_2x_large_2x.png">   
+                            <div class="expert-help-content">
+                                <h3 class="expert-help-content-eyebrow-2"><b>Apple at Work</b></h3>
+                                <p class="expert-help-content-headline">Apple의 중소기업 전담 팀이<br>도와드립니다.</p>
+                                <ul class="expert-help-content-ul">
+                                    <li class="expert-help-content-li-1">
+                                        <span>
+                                            <a href="https://www.apple.com/kr/retail/business/" style="color:#0066CC">우리의 지원 서비스 보기 ></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 지금 apple에서는 -->
+    <section>
+        <div class="now-apple">
+            <h2 class="now-apple-blank"> </h2>
+            <div claxbss="now-apple-title" style="font-size: xx-large;"><b>지금 Apple에서는.</b></div>
+            <h2 class="now-apple-blank"> </h2>
+            <div class="now-apple-news">
+                <ul class="now-apple-grid">
+                    <li class="now-apple-card-small">
+                        <div class="now-apple-card-content">
+                            <img class="now-apple-img" src="https://digitalassets-retail.cdn-apple.com/retail-image-server/8a7/acc/4a9/054/07b/605/37e/bee/208/860/284f13e9-101a-35fc-9a5b-2e48be568741_retail_tile_1320_large_2x.jpg">  
+                            <div class="now-apple-content-1">
+                                <h4 class="now-apple-content-eyebrow-1">Apple 강남</h4>
+                                <p class="now-apple-content-headline"><b>드디어 오픈.</b></p>
+                                <ul class="now-apple-content-ul">
+                                    <li class="now-apple-content-li">
+                                        <span>
+                                            <a href="https://www.apple.com/kr/retail/gangnam/" style="color:#0066CC">더 알아보기 ></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="now-apple-card-small">
+                        <div class="now-apple-card-content">
+                            <img class="now-apple-img" src="https://digitalassets-retail.cdn-apple.com/retail-image-server/df3/945/13f/825/7d4/ba1/81c/d8f/106/866/8a32eac6-7012-300d-8db7-d6b76f7b4c77_Privacy_TAA2__large_2x.jpg">  
+                            <div class="now-apple-content-2">
+                                <h4 class="now-apple-content-eyebrow-2">Today at Apple</h4>
+                                <p class="now-apple-content-headline"><b>Apple Store에 들러<br>iPhone의 개인정보 보호에 대해<br>더 알아보기.</b></p>
+                                <ul class="now-apple-content-ul">
+                                    <li class="now-apple-content-li">
+                                        <span>
+                                            <a href="https://www.apple.com/kr/privacy/?cid=rem-kr-taa-retail-skills-privacy" style="color:#0066CC">무료 세션 참여하기 ></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="section-to-footer-blank"></h2>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sosumi">
+                <section class="footer-sosumi-section">
+                    <ul class="footer-sosumi-ul" style="-webkit-padding-start: 0px;"><!-- style ="-webkit-padding-start: 0px;" << ul의 앞쪽 여백 padding 40px 삭제-->
+                        <a>Apple은 사용자의 IP 주소 또는 브라우저를 사용해 사용자의 대략적인 현재 위치를 확인합니다. 해당 정보는 세션 종료 후 또는 브라우저 설정에 따라 삭제됩니다.
+                            <br><br>
+                            * ₩780,000은 iPhone 13 Pro Max 1TB 모델의 보상 판매 금액으로, 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 
+                            일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 
+                            보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 
+                            예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 
+                            매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 
+                            보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다. 
+                            보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다.
+                            <br><br>
+                            1. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 
+                            크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 
+                            최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 
+                            부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 
+                            일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 
+                            적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다. 
+                            보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 
+                            추가 약관은 "<a href="https://www.apple.com/kr/trade-in/">apple.com/kr/trade-in</a>"을 참고하십시오.
+                        </a>
+                    </ul>
+                </section>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-directory">
+                    <a href="https://www.apple.com/kr/"><img src="./apple logo.png" width="13px" height="17px"></a>
+                </div>
+                <a style="font-size: 11px;">   &nbsp;&nbsp;&nbsp; <span style="color: hsla(0,0%,73%,.6)">></span> &nbsp;&nbsp;&nbsp;리테일</a>
+            </nav>
+            <nav class="footer-directory-content"> 
+                <div class="footer-directory-content-column">
+                    <div class="footer-directory-column-shopping">
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">
+                                <span class="directory-column-section-title-text">쇼핑 및 알아보기</span>
+                            </h3>
+                            <ul class="directory-column-section-list" style="-webkit-padding-start: 0px;">
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="https://www.apple.com/kr/store" data-analytics-title="store">스토어</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="https://www.apple.com/kr/mac/" data-analytics-title="mac">Mac</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="https://www.apple.com/kr/ipad/" data-analytics-title="ipad">iPad</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="/kr/iphone/" data-analytics-title="iphone">iPhone</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="/kr/watch/" data-analytics-title="watch">Watch</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="/kr/airpods/" data-analytics-title="airpods">AirPods</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="/kr/tv-home/" data-analytics-title="tv and home">TV 및 홈</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="/kr/airtag/" data-analytics-title="airtag">AirTag</a></li>
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="/kr/shop/goto/buy_accessories" data-analytics-title="accessories">액세서리</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-directory-column-wallet">
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">
+                                <span class="directory-column-section-title-text">Apple 지갑</span>
+                            
+                            </h3>
+                            <ul class="directory-column-section-list" role="list">
+                                <li class="directory-column-section-item" role="listitem">
+                                    <a class="directory-column-section-link" href="https://www.apple.com/kr/wallet/" data-analytics-title="wallet">지갑</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-directory-content-column">
+                    <div class="directory-column-section-account">
+                        <h3 class="directory-column-section-title">
+                            <span class="directory-column-section-title-text">계정</span>
+                        </h3>
+                        <ul class="directory-column-section-list" role="list">
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="https://appleid.apple.com/kr/" data-analytics-title="manage your apple id" data-analytics-exit-link="">Apple&nbsp;ID 관리</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/shop/goto/account" data-analytics-title="apple store account">Apple Store 계정</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="https://www.icloud.com" data-analytics-title="icloud.com" data-analytics-exit-link="">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="directory-column-section-entertainment">
+                        <h3 class="directory-column-section-title">
+                            <span class="directory-column-section-title-text">엔터테인먼트</span>
+                        </h3>
+                        <ul class="directory-column-section-list" role="list">
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="-directory-column-section-link" href="/kr/apple-one/" data-analytics-title="apple one">Apple&nbsp;One</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/apple-tv-plus/" data-analytics-title="apple tv plus">Apple&nbsp;TV+</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/apple-music/" data-analytics-title="apple music">Apple&nbsp;Music</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/apple-arcade/" data-analytics-title="apple arcade">Apple&nbsp;Arcade</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/apple-podcasts/" data-analytics-title="apple podcasts">Apple Podcasts</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/apple-books/" data-analytics-title="apple books">Apple&nbsp;Books</a></li>
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="directory-column-section-link" href="/kr/app-store/" data-analytics-title="app store">App&nbsp;Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-directory-content-column">
+                    <div class="directory-column-section-store">
+                        <h3 class="directory-column-section-title">
+                            <span class="directory-column-section-title-text">Apple Store</span>
+                        </h3>
+                        <ul class="ac-gf-directory-column-section-list" role="list">
+                            <li class="directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/retail/" data-analytics-title="find a store">매장 찾기</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/retail/geniusbar/" data-analytics-title="genius bar">Genius Bar</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/today/" data-analytics-title="today at apple">Today at Apple</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/today/camp/" data-analytics-title="apple camp">Apple 캠프</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="https://apps.apple.com/kr/app/apple-store/id375380948" data-analytics-title="apple store app" data-analytics-exit-link="">Apple Store 앱</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/shop/goto/special_deals" data-analytics-title="refurbished and clearance">리퍼 및 특가 제품</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/shop/goto/financing" data-analytics-title="financing">금융 혜택</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/trade-in/" data-analytics-title="apple trade in">Apple&nbsp;Trade&nbsp;In</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/shop/goto/order/list" data-analytics-title="order status">주문 상태</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/shop/goto/help" data-analytics-title="shopping help">쇼핑 도움말</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-directory-content-column">
+                    <div class="directory-column-section-business">
+                        <h3 class="ac-gf-directory-column-section-title">
+                            <span class="ac-gf-directory-column-section-title-text">비즈니스</span>
+                        </h3>
+                        <ul id="footer-directory-column-section-business" class="ac-gf-directory-column-section-list" role="list">
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/business/" data-analytics-title="apple and business">Apple과 비즈니스</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/retail/business/" data-analytics-title="shop for business">비즈니스를 위한 제품 쇼핑하기</a></li>
+                        </ul>
+                    </div>
+                    <div class="directory-column-section-education">
+                        <h3 class="ac-gf-directory-column-section-title">
+                            <span class="ac-gf-directory-column-section-title-text">교육</span>
+                        </h3>
+                        <ul id="footer-directory-column-section-education" class="ac-gf-directory-column-section-list" role="list">
+                            <li class="ac-gf-directory-column-section-item" role="listitem"><a class="ac-gf-directory-column-section-link" href="/kr/education/" data-analytics-title="apple and education">Apple과 교육</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem"><a class="ac-gf-directory-column-section-link" href="/kr/education/k12/how-to-buy/" data-analytics-title="shop for k12">초중고용 제품 쇼핑하기</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem"><a class="ac-gf-directory-column-section-link" href="/kr/shop/goto/educationrouting" data-analytics-title="shop for university">대학 생활을 위한 제품 쇼핑하기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-directory-content-column">
+                    <div class="directory-column-section-responsibility">
+                        <h3 class="ac-gf-directory-column-section-title">
+                            <span class="ac-gf-directory-column-section-title-text">Apple의 가치관</span>
+                        </h3>
+                        <ul id="footer-directory-column-section-responsibility" class="ac-gf-directory-column-section-list" role="list">
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/accessibility/" data-analytics-title="accessibility">손쉬운 사용</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/education-initiative/" data-analytics-title="education">교육</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/environment/" data-analytics-title="environment">환경</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/privacy/" data-analytics-title="privacy">개인정보 보호</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/supplier-responsibility/" data-analytics-title="supplier responsibility">협력업체에 대한 책임</a></li>
+                        </ul>
+                    </div>
+                    <div class="directory-column-section-about">
+                        <h3 class="ac-gf-directory-column-section-title">
+                            <span class="ac-gf-directory-column-section-title-text">Apple 정보</span>
+                        </h3>
+                        <ul id="footer-directory-column-section-about" class="ac-gf-directory-column-section-list" role="list">
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/newsroom/" data-analytics-title="newsroom">Newsroom</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/leadership/" data-analytics-title="apple leadership">Apple 리더십</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/careers/kr/" data-analytics-title="career opportunities">채용 안내</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/compliance/" data-analytics-title="ethics and compliance">윤리 및 규정 준수</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/apple-events/" data-analytics-title="events">이벤트</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/job-creation/" data-analytics-title="european job creation">일자리 창출</a></li>
+                            <li class="ac-gf-directory-column-section-item" role="listitem">
+                                <a class="ac-gf-directory-column-section-link" href="/kr/contact/" data-analytics-title="contact apple">Apple 연락처</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="footer-final">
+                <div class="footer-shop">
+                    <div class="footer-shop-ment" x-ms-format-detection="none">
+                        다양한 쇼핑 방법: 
+                        <a href="/kr/retail/" data-analytics-title="find an apple store" style="color:#0066CC">Apple Store를 방문</a>
+                        하거나, 
+                        <a href="https://locate.apple.com/kr/ko/" data-analytics-title="other retailers or resellers" data-analytics-exit-link="" style="color:#0066CC">리셀러</a>
+                        를 찾아보거나, 080-330-8877번으로 전화하세요.
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <div class="footer-legal-copyright">Copyright © 2023 Apple Inc. 모든 권리 보유.</div>
+                    <ul class="footer-legal-link" style="-webkit-padding-start: 0px;">
+                        <li class="footer-legal-link-item-privacy">
+                            <a class="footer-legal-link-privacy" href="https://www.apple.com/kr/legal/privacy/" data-analytics-title="privacy policy">개인정보 처리방침</a>
+                        </li>
+                        <li class="footer-legal-link-item-site">
+                            <a class="footer-legal-link-site" href="https://www.apple.com/kr/legal/internet-services/terms/site.html" data-analytics-title="terms of use">웹 사이트 이용 약관</a>
+                        </li>
+                        <li class="footer-legal-link-item-refunds">
+                            <a class="footer-legal-link-refunds" href="https://www.apple.com/kr/shop/browse/open/salespolicies" data-analytics-title="sales and refunds">판매 및 환불</a>
+                        </li>
+                        <li class="footer-legal-link-item-legal">
+                            <a class="footer-legal-link-legal" href="https://www.apple.com/kr/legal/" data-analytics-title="legal">법적 고지</a>
+                        </li>
+                        <li class="footer-legal-link-item-sitemap">
+                            <a class="footer-legal-link-sitemap" href="https://www.apple.com/kr/sitemap/" data-analytics-title="site map">사이트 맵</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
 
 </body>
 </html>
